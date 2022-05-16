@@ -1,0 +1,25 @@
+#interface and questions
+print("Welcome to Stefon's Tipping calculator")
+total_bill = input("What was the total of the bill?\n")
+total_people = input("How many people will be splitting this bill with you?\n")
+percentagetip = input("What percentage would you like to leave as a tip? 10%, 12%, or 15%?\n")
+#conversions and precalculations
+float_total_bill = float(total_bill)
+
+float_total_people = float(total_people)
+float_percentage_tip =float(percentagetip)
+true_percentage = float(float_percentage_tip / 100.)
+
+#equation and final calculation
+
+payperperson = (float_total_bill / float_total_people)
+
+percentadd = true_percentage * payperperson
+
+
+percentadd = true_percentage * payperperson
+
+finalpayperperson = (percentadd + payperperson)
+formatted_finalpayperperson ="{:.2f}".format(finalpayperperson)
+
+print(f"Each person will have to pay ${formatted_finalpayperperson}.")
