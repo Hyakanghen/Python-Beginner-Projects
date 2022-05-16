@@ -1,0 +1,20 @@
+age = input("What is your current age in years?")
+
+#age in years the user inputs
+user_age_in_years_int = (int)(age)
+
+#conversions years, months, weeks, days - some of these may not be used
+# year_to_months = 12
+# months_to_weeks = 4
+# weeks_to_days = 7
+# days_to_years = 365
+# weeks_to_years = 52
+
+#time left if lived to 90 calculations
+time_left_months = 1080 - user_age_in_years_int
+
+time_left_weeks = 4680 - user_age_in_years_int * 52
+
+time_left_days = 32850 -user_age_in_years_int * 365
+#Printing to user time remaining
+print(f"you have {time_left_days} days, {time_left_weeks} weeks, and {time_left_months} months assuming you live until 90 years of age.")
